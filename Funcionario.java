@@ -1,5 +1,3 @@
-package academia.ufpb.br;
-
 public class Funcionario extends Pessoa{
 	private double salario;//Salario do Funcionario
 	private String cargaHoraria;//Carga Horaria do funcionario
@@ -13,23 +11,23 @@ public class Funcionario extends Pessoa{
 		this.cargaHoraria = cargaHoraria;
 	}
 	
-	public void setSalario(double salario) {
+	public void setSalario(double salario) {//pega o salario do funcionario
 		this.salario = salario;
 	}
 	
-	public double getSalario() {
+	public double getSalario() {//retorna o salario do funcionario
 		return this.salario;
 	}
 	
-	public void setCargaHorario(String cargaHoraria) {
+	public void setCargaHorario(String cargaHoraria) {//pega a carga horaria do funcionario
 		this.cargaHoraria = cargaHoraria;
 	}
 	
-	public String getCargaHoraria() {
+	public String getCargaHoraria() {//retorna a carga horaria do funcionario
 		return this.cargaHoraria;
 	}
 	
-	public String toString() {
+	public String toString() {//retorna os dados do Funcionario
 		return "\nID: "+this.getId()+"\nNome: "+super.getNome()+"\nCPF: "+super.getCpf()+"\nContato: "+super.getContato()+"\nEndereco: "+super.getEndereco()+"\nSalario: "+this.salario+"\nCarga Horaria: "+this.cargaHoraria;
 	}
-}
+}//fim da classe Funcionario
